@@ -2,7 +2,7 @@
 
 **AIM:** 
 
-To implement  JK flipflop using verilog and validating their functionality using their functional tables
+To implement  JK flipflop using Verilog and validating their functionality using their functional tables
 
 **SOFTWARE REQUIRED:**
 
@@ -22,11 +22,11 @@ This circuit has two inputs J & K and two outputs Qtt & Qtt’. The operation of
 ![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/c4360742-e8a8-4937-b089-c46c0433f9a3)
 
  
-Here, Qtt & Qt+1t+1 are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of JK flip-flop. Present Inputs Present State Next State
+Here, Qtt & Qt+1t+1 are the present state & next state respectively. So, the JK flip-flop can be used for one of these four functions such as Hold, Reset, Set, or complement of present state based on the input conditions, when the positive transition of the clock signal is applied. The following table shows the characteristics of the JK flip-flop. Present Inputs Present State Next State
  
 ![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/6c275261-a6d5-4c37-a3a7-1e88ca11c4cd)
 
-By using three variable K-Map, we can get the simplified expression for next state, Qt+1t+1. Three variable K-Map for next state, Qt+1t+1 is shown in the following figure.
+By using three variable K-Map, we can get the simplified expression for the next state, Qt+1t+1. Three variable K-Maps for the next state, Qt+1t+1 are shown in the following figure.
  
 ![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/5174f41b-0ce0-4329-a372-6d1943ea6673)
 
@@ -34,7 +34,15 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-/* write all the steps invloved */
+1. Type the program in Quartus software.
+
+2. Compile and run the program.
+
+3. Generate the RTL schematic and save the logic diagram.
+
+4. Create nodes for inputs and outputs to generate the timing diagram.
+
+5. For different input combinations generate the timing diagram.
 
 **PROGRAM**
 
@@ -89,5 +97,5 @@ endmodule
 **RESULTS**
 
 
-implemented JK flipflop using verilog and validated their functionality using
+implemented JK flipflop using Verilog and validated their functionality using
 their functional tables
