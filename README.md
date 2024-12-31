@@ -56,22 +56,37 @@ registration number 24900367
 
 
 
-module jk_ff (j, k, clk, rst, q);
-  input j, k, clk, rst;
-  output reg q;
-  always @(posedge clk or posedge rst) begin
+    module jk_ff (j, k, clk, rst, q);
+
+    input j, k, clk, rst;
+  
+    output reg q;
+  
+    always @(posedge clk or posedge rst) begin
+  
     if (rst)
-      q <= 0; // Reset the flip-flop
+    
+    q <= 0; // Reset the flip-flop
+      
     else if (j == 0 && k == 0)
-      q <= q; // No change
+    
+    q <= q; // No change
+      
     else if (j == 0 && k == 1)
-      q <= 0; // Reset
+    
+    q <= 0; // Reset
+      
     else if (j == 1 && k == 0)
-      q <= 1; // Set
+    
+    q <= 1; // Set
+      
     else if (j == 1 && k == 1)
-      q <= ~q; // Toggle
-  end
-endmodule
+    
+    q <= ~q; // Toggle
+      
+    end
+  
+    endmodule
 
 
 **RTL LOGIC FOR FLIPFLOPS**
@@ -85,17 +100,18 @@ endmodule
 
 
 
-**TIMING DIAGRAMS FOR FLIP FLOPS**
+**TIMING DIAGRAM FOR FLIP FLOPS**
 
 
 
 
-![image](https://github.com/user-attachments/assets/fa24f031-1a2c-4413-b160-58dabe0d6458)
+![WhatsApp Image 2024-12-31 at 13 24 53_d49feb59](https://github.com/user-attachments/assets/8f977a21-984f-476c-ae04-8bd7b184c315)
 
 
 
-**RESULTS**
+
+**RESULT**
 
 
-implemented JK flipflop using Verilog and validated their functionality using
+Implemented JK flipflop using Verilog and validated their functionality using
 their functional tables
