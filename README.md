@@ -56,7 +56,7 @@ registration number 24900367
 
 
 
-    module jk_ff (j, k, clk, rst, q);
+  ```  module jk_ff (j, k, clk, rst, q);
 
     input j, k, clk, rst;
   
@@ -87,6 +87,7 @@ registration number 24900367
     end
   
     endmodule
+```
 
 
 **RTL LOGIC FOR FLIPFLOPS**
